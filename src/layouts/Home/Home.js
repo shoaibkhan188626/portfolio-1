@@ -1,15 +1,15 @@
-import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from 'assets/gamestack-list.jpg';
-import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/gamestack-login.jpg';
-import sliceTextureLarge from 'assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
-import sliceTexture from 'assets/slice-app.jpg';
-import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
-import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
+// import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
+// import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
+// import gamestackTexture2 from 'assets/gamestack-list.jpg';
+// import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
+// import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
+// import gamestackTexture from 'assets/gamestack-login.jpg';
+// import sliceTextureLarge from 'assets/slice-app-large.jpg';
+// import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
+// import sliceTexture from 'assets/slice-app.jpg';
+// import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
+// import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
+// import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -18,7 +18,7 @@ import { ProjectSummary } from 'layouts/Home/ProjectSummary';
 import { useEffect, useRef, useState } from 'react';
 import styles from './Home.module.css';
 
-const disciplines = ['Mongo-DB', 'Express', 'React', 'Node', 'SQL'];
+const disciplines = ['Mongo-DB', 'Express.js', 'React.js', 'Node.js', 'SQL', 'Next.js'];
 
 export const Home = () => {
   const [visibleSections, setVisibleSections] = useState([]);
@@ -89,12 +89,12 @@ export const Home = () => {
         model={{
           type: 'laptop',
           alt: 'Smart Sparrow lesson builder',
-          textures: [
-            {
-              srcSet: [sprTexture, sprTextureLarge],
-              placeholder: sprTexturePlaceholder,
-            },
-          ],
+          // textures: [
+          //   {
+          //     srcSet: [sprTexture, sprTextureLarge],
+          //     placeholder: sprTexturePlaceholder,
+          //   },
+          // ],
         }}
       />
       <ProjectSummary
@@ -110,16 +110,16 @@ export const Home = () => {
         model={{
           type: 'phone',
           alt: 'App login screen',
-          textures: [
-            {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
-              placeholder: gamestackTexturePlaceholder,
-            },
-            {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
-              placeholder: gamestackTexture2Placeholder,
-            },
-          ],
+          // textures: [
+          //   {
+          //     srcSet: [gamestackTexture, gamestackTextureLarge],
+          //     placeholder: gamestackTexturePlaceholder,
+          //   },
+          //   {
+          //     srcSet: [gamestackTexture2, gamestackTexture2Large],
+          //     placeholder: gamestackTexture2Placeholder,
+          //   },
+          // ],
         }}
       />
       <ProjectSummary
@@ -134,12 +134,12 @@ export const Home = () => {
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
-          textures: [
-            {
-              srcSet: [sliceTexture, sliceTextureLarge],
-              placeholder: sliceTexturePlaceholder,
-            },
-          ],
+          // textures: [
+          //   {
+          //     srcSet: [sliceTexture, sliceTextureLarge],
+          //     placeholder: sliceTexturePlaceholder,
+          //   },
+          // ],
         }}
       />
       <Profile

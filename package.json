@@ -2,9 +2,9 @@
   "name": "portfolio",
   "version": "1.0.0",
   "homepage": "https://hamishw.com",
-  "description": "Portfolio site for Hamish Williams",
-  "repository": "https://github.com/HamishMW/portfolio.git",
-  "author": "Hamish Williams <hello@hamishw.com>",
+  "description": "Portfolio site for Shoaib Khan",
+  "repository": "https://github.com/shoaibkhan188626",
+  "author": "Shoaib Khan ",
   "devDependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
     "@storybook/addon-a11y": "^6.5.10",
@@ -37,9 +37,10 @@
     "stylelint-config-standard": "^26.0.0"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "framer-motion": "^7.1.0",
     "mdx-bundler": "^9.0.1",
-    "next": "^12.2.5",
+    "next": "^12.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "three": "^0.146.0",

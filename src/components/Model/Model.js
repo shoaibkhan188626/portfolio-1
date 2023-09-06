@@ -389,11 +389,11 @@ const Device = ({
       let playAnimation;
 
       const [placeholder, gltf] = await Promise.all([
-        await textureLoader.loadAsync(texture.placeholder.src),
+        // await textureLoader.loadAsync(texture.placeholder.src),
         await modelLoader.loadAsync(url),
       ]);
 
-      modelGroup.current.add(gltf.scene);
+      // modelGroup.current.add(gltf.scene);
 
       gltf.scene.traverse(async node => {
         if (node.material) {
@@ -490,7 +490,7 @@ const Device = ({
       return { loadFullResTexture, playAnimation };
     };
 
-    setLoadDevice({ start: load });
+    // setLoadDevice({ start: load });
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

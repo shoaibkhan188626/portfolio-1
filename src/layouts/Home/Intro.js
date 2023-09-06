@@ -65,7 +65,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
             <DisplacementSphere />
             <header className={styles.text}>
               <h1 className={styles.name} data-visible={visible} id={titleId}>
-                <DecoderText text="Shoaib Khan" delay={300} />
+                <DecoderText text="Shoaib Khan" delay={1000} />
               </h1>
               <Heading level={0} as="h2" className={styles.title}>
                 <VisuallyHidden className={styles.label}>
@@ -77,7 +77,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                     data-status={status}
                     style={cssProps({ delay: tokens.base.durationXS })}
                   >
-                    M.E.R.N Dev
+                    M.E.R.N Developer
                   </span>
                   <span className={styles.line} data-status={status} />
                 </span>

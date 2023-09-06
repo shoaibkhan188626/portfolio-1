@@ -1,4 +1,4 @@
-service: hamish-portfolio
+service: Shoaib-portfolio
 
 provider:
   name: aws

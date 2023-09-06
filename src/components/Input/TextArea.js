@@ -48,7 +48,7 @@ export const TextArea = ({
     <textarea
       className={classes(styles.textarea, className)}
       ref={textareaRef}
-      onChange={handleChange}
+      // onChange={handleChange}
       style={cssProps({ resize })}
       rows={rows}
       value={value}

@@ -101,10 +101,10 @@ export const ProjectSummary = ({
               models={[
                 {
                   ...deviceModels.laptop,
-                  texture: {
-                    ...model.textures[0],
-                    sizes: laptopSizes,
-                  },
+                  // texture: {
+                  //   ...model.textures[0],
+                  //   sizes: laptopSizes,
+                  // },
                 },
               ]}
             />
@@ -124,18 +124,18 @@ export const ProjectSummary = ({
                 {
                   ...deviceModels.phone,
                   position: { x: -0.6, y: 1.1, z: 0 },
-                  texture: {
-                    ...model.textures[0],
-                    sizes: phoneSizes,
-                  },
+                  // texture: {
+                  //   ...model.textures[0],
+                  //   sizes: phoneSizes,
+                  // },
                 },
                 {
                   ...deviceModels.phone,
                   position: { x: 0.6, y: -0.5, z: 0.3 },
-                  texture: {
-                    ...model.textures[1],
-                    sizes: phoneSizes,
-                  },
+                  // texture: {
+                  //   ...model.textures[1],
+                  //   sizes: phoneSizes,
+                  // },
                 },
               ]}
             />
