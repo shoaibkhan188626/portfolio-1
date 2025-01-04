@@ -50,7 +50,7 @@ export const DisplacementSphere = props => {
 
   useEffect(() => {
     const { innerWidth, innerHeight } = window;
-    mouse.current = new Vector2(0.8, 0.5);
+    mouse.current = new Vector2(0.5, 0.5);
     renderer.current = new WebGLRenderer({
       canvas: canvasRef.current,
       antialias: false,

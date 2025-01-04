@@ -110,8 +110,8 @@ const tokensMobileSmall = {
 const dark = {
   background: 'oklch(17.76% 0 0)',
   backgroundLight: 'oklch(21.78% 0 0)',
-  primary: 'oklch(84.42% 0.19 202.24)',
-  accent: 'oklch(84.42% 0.19 202.24)',
+  primary: 'oklch(62.8% 0.25768330773615683 29.2338851923426)',
+  accent: 'oklch(62.8% 0.25768330773615683 29.2338851923426)', // Changed to red
   error: 'oklch(65.91% 0.249 13.76)',
   text: 'var(--white)',
   textTitle: 'var(--text)',
@@ -123,13 +123,14 @@ const light = {
   background: 'oklch(96.12% 0 0)',
   backgroundLight: 'var(--white)',
   primary: 'var(--black)',
-  accent: 'oklch(84.42% 0.19 202.24)',
+  accent: 'oklch(62.8% 0.25768330773615683 29.2338851923426)', // Changed to red
   error: 'oklch(63.17% 0.259 25.41)',
   text: 'var(--black)',
   textTitle: 'color-mix(in lab, var(--text) 90%, transparent)',
   textBody: 'color-mix(in lab, var(--text) 75%, transparent)',
   textLight: 'color-mix(in lab, var(--text) 55%, transparent)',
 };
+
 
 export const tokens = {
   base: baseTokens,

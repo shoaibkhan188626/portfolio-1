@@ -41,11 +41,12 @@ void main() {
 
 	#include <clipping_planes_fragment>
 
-  vec3 color = vec3(vUv * (0.2 - 2.0 * noise), 1.0);
-  vec3 finalColors = vec3(color.b * 1.5, color.r, color.r);
-  vec4 diffuseColor = vec4(cos(finalColors * noise * 3.0), 1.0);
-  ReflectedLight reflectedLight = ReflectedLight(vec3(0.0), vec3(0.0), vec3(0.0), vec3(0.0));
-  vec3 totalEmissiveRadiance = emissive;
+ vec3 color = vec3(vUv * (0.0 - 0.0 * noise), 0.0);  // Base color calculation, mostly unaffected
+vec3 finalColors = vec3(color.r * 0.0, 0.0, 0.0);  // Only enhance the red channel, set green and blue to 0
+vec4 diffuseColor = vec4(cos(finalColors * noise * 0.0), 0.0);  // Cosine applied to the red-dominated color
+ReflectedLight reflectedLight = ReflectedLight(vec3(0.0), vec3(0.0), vec3(0.0), vec3(0.0));  // No reflection
+vec3 totalEmissiveRadiance = emissive;  // Emissive light remains the same
+
 
 	#include <logdepthbuf_fragment>
 	#include <map_fragment>
